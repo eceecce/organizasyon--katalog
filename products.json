@@ -1,0 +1,352 @@
+[
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş Gazebo Perde Takımı",
+    "price": 10000,
+    "image": "perde.jpg",
+    "unit": "takım"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş Perde Takımı",
+    "price": 10000,
+    "image": "perde.jpg",
+    "unit": "takım"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş 3×4 Arka Perde",
+    "price": 4500,
+    "image": "perde.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş 1 Adet Fon",
+    "price": 1000,
+    "image": "perde.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş 6 Adet Fon",
+    "price": 5600,
+    "image": "perde.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş 5’li Drape",
+    "price": 5600,
+    "image": "perde.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Mat Kumaş 3 Drape 2 Fon",
+    "price": 5600,
+    "image": "perde.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Parlak Kumaş Perde Takımı",
+    "price": 11000,
+    "image": "perde.jpg",
+    "unit": "takım"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Parlak Kumaş 3×4 Arka Perde",
+    "price": 5000,
+    "image": "perde.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Parlak Kumaş 1 Adet Fon",
+    "price": 1200,
+    "image": "perde.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Parlak Kumaş 6 Adet Fon",
+    "price": 6500,
+    "image": "perde.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Parlak Kumaş 5’li Drape",
+    "price": 6500,
+    "image": "perde.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Perde Takımları",
+    "name": "Parlak Kumaş 3 Drape 2 Fon",
+    "price": 6500,
+    "image": "perde.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Peçete",
+    "name": "Peçete 45×45 Safir",
+    "price": 115,
+    "image": "pecete.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Peçete",
+    "name": "Peçete 45×45 Kadife",
+    "price": 75,
+    "image": "pecete.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Peçete",
+    "name": "Peçete 50×50 Safir",
+    "price": 120,
+    "image": "pecete.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Peçete",
+    "name": "Peçete 50×50 Kadife",
+    "price": 90,
+    "image": "pecete.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Sandalye & Kokteyl",
+    "name": "Sandalye Giydirme Kiloş",
+    "price": 300,
+    "image": "sandalye.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Sandalye & Kokteyl",
+    "name": "Sandalye Giydirme Streç",
+    "price": 200,
+    "image": "sandalye.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Sandalye & Kokteyl",
+    "name": "Kokteyl Masa Örtüsü Kelebek Ayak",
+    "price": 750,
+    "image": "sandalye.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Sandalye & Kokteyl",
+    "name": "Kokteyl Masa Örtüsü Yuvarlak Ayak",
+    "price": 850,
+    "image": "sandalye.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Safir Kumaş 35×240 (Overlok)",
+    "price": 240,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Kadife Kumaş 35×240",
+    "price": 210,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Şifon Kumaş 35×240",
+    "price": 420,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Mat Mikro Kumaş 35×240",
+    "price": 210,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Katlı Dikiş Safir Kumaş 35×240",
+    "price": 300,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Katlı Dikiş Kadife Kumaş 35×240",
+    "price": 270,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "Runner Katlı Dikiş Şifon Kumaş 35×240",
+    "price": 480,
+    "image": "runner.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Runner & Dikiş",
+    "name": "2’li Şifon Kanat",
+    "price": 2400,
+    "image": "runner.jpg",
+    "unit": "set"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Safir Yuvarlak 290 cm",
+    "price": 1050,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Soft Yuvarlak 275 cm",
+    "price": 960,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Kadife Yuvarlak 300 cm",
+    "price": 720,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Safir Yuvarlak 320 cm",
+    "price": 1200,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Soft Yuvarlak 320 cm",
+    "price": 1100,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Safir Dikdörtgen 150×240 (Yarıya Kadar)",
+    "price": 600,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Soft Dikdörtgen 150×240 (Yarıya Kadar)",
+    "price": 660,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Kadife Dikdörtgen 150×240 (Yarıya Kadar)",
+    "price": 450,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Safir Dikdörtgen 230×320 (Yere Kadar)",
+    "price": 1200,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Soft Dikdörtgen 230×320 (Yere Kadar)",
+    "price": 1100,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Masa Örtüleri",
+    "name": "Kadife Dikdörtgen 230×320 (Yere Kadar)",
+    "price": 660,
+    "image": "masa.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "Mat Perde Kumaşı Metresi",
+    "price": 185,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "Parlak Perde Kumaşı Metresi",
+    "price": 205,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "Safir Kumaş Metresi",
+    "price": 250,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "Soft Kumaş Metresi",
+    "price": 270,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "Basma Kadife",
+    "price": 300,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "İthal Kadife",
+    "price": 400,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Kumaş Metrajı",
+    "name": "Şifon Kumaş Metresi",
+    "price": 220,
+    "image": "metraj.jpg",
+    "unit": "metre"
+  },
+  {
+    "category": "Fiyonk",
+    "name": "Fiyonk 20×40",
+    "price": 1000,
+    "image": "fiyonk.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Fiyonk",
+    "name": "Fiyonk 30×60",
+    "price": 1500,
+    "image": "fiyonk.jpg",
+    "unit": "adet"
+  },
+  {
+    "category": "Fiyonk",
+    "name": "Fiyonk 45×90",
+    "price": 3000,
+    "image": "fiyonk.jpg",
+    "unit": "adet"
+  }
+]
