@@ -1,70 +1,656 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#35152f">
-  <meta name="description" content="Organizasyon Kumaşları 2026 fiyat kataloğu. Masa örtüsü, perde takımı, runner, peçete ve kumaş çeşitleri.">
-  <title>Organizasyon Kumaşları | 2026 Koleksiyonu</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organizasyon Kumaşları | Premium</title>
+
+<style>
+:root {
+  --navy: #12365a;
+  --blue: #3976a8;
+  --light: #edf6fc;
+  --gold: #c5a66a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7fbff;
+  color: var(--navy);
+}
+
+header {
+  background: linear-gradient(120deg, #102c49, #3976a8);
+  color: white;
+  padding: 25px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+
+.logo small {
+  display: block;
+  font: 10px Arial;
+  letter-spacing: 4px;
+  margin-top: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 65px 6%;
+  background: linear-gradient(135deg, #edf6fc, #c9e1f3);
+  text-align: center;
+}
+
+.hero small {
+  letter-spacing: 4px;
+  color: var(--blue);
+}
+
+h1 {
+  font: clamp(35px, 6vw, 58px) Georgia, serif;
+  margin: 20px 0;
+}
+
+.hero p {
+  color: #526b80;
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  padding: 14px 24px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.section {
+  padding: 55px 6%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  font: 36px Georgia, serif;
+}
+
+.section-title p {
+  color: #71879a;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filters button {
+  background: white;
+  color: var(--navy);
+  border: 1px solid #c8dce9;
+  padding: 10px 17px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.filters button.active {
+  background: var(--navy);
+  color: white;
+}
+
+#search {
+  display: block;
+  width: min(100%, 400px);
+  padding: 13px;
+  border: 1px solid #c8dce9;
+  margin: 0 auto 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 23px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0eaf2;
+  box-shadow: 0 8px 25px #12365a0c;
+  overflow: hidden;
+}
+
+.photo {
+  height: 250px;
+  background: linear-gradient(135deg, #d8eafa, #8fb8d9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  color: white;
+  font: italic 25px Georgia, serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.photo-count {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #12365ae8;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h3 {
+  font: 23px Georgia, serif;
+  margin: 0 0 12px;
+}
+
+.info p {
+  color: #71879a;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 44px;
+}
+
+.price {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info button {
+  width: 100%;
+  padding: 12px;
+  background: var(--light);
+  color: var(--navy);
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.about {
+  background: #e8f3fb;
+  text-align: center;
+  padding: 55px 8%;
+  line-height: 1.9;
+}
+
+.contact {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 50px 6%;
+}
+
+.contact p {
+  color: #d5e5f2;
+  line-height: 1.8;
+}
+
+.contact .button {
+  background: white;
+  color: var(--navy);
+}
+
+footer {
+  background: #0b233a;
+  color: #b7cadb;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Büyüyen fotoğraf galerisi */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  background: #061727f5;
+  color: white;
+  padding: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.gallery {
+  width: min(100%, 950px);
+  text-align: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+}
+
+.gallery h2 {
+  font: 28px Georgia, serif;
+}
+
+.gallery p {
+  color: #d2e2ef;
+}
+
+.gallery button {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 8px;
+  background: #244968;
+  color: white;
+  border: 1px solid #8ca9c0;
+}
+
+.gallery .close {
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  font-size: 25px;
+}
+
+#thumbnails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+#thumbnails img.selected {
+  border-color: var(--gold);
+}
+
+@media (max-width: 800px) {
+  .products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .products { grid-template-columns: 1fr; }
+  .photo { height: 270px; }
+  header { justify-content: center; text-align: center; }
+  nav a { margin: 0 7px; }
+}
+</style>
 </head>
+
 <body>
-<header class="topbar">
-  <a class="brand" href="#anasayfa"><span class="brand-mark">✦</span><span>ORGANİZASYON<small>KUMAŞLARI</small></span></a>
-  <nav><a href="#koleksiyon">Koleksiyon</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a></nav>
-  <a class="nav-cta" href="#koleksiyon">Fiyatları keşfet <span>↗</span></a>
-  <button class="menu-toggle" aria-label="Menüyü aç" onclick="document.body.classList.toggle('menu-open')">☰</button>
+
+<header>
+  <div class="logo">
+    ORGANİZASYON KUMAŞLARI
+    <small>PREMİUM TEKSTİL KOLEKSİYONU</small>
+  </div>
+  <nav>
+    <a href="#urunler">Ürünler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 </header>
-<main>
-<section class="hero" id="anasayfa">
-  <div class="hero-photo"></div><div class="hero-shade"></div>
-  <div class="hero-copy">
-    <p class="eyebrow"><span></span> 2026 KOLEKSİYONU <span></span></p>
-    <h1>Her detayda<br><em>zarafet.</em></h1>
-    <p class="hero-text">Hayalinizdeki organizasyonlar için seçkin kumaşlar, özel ölçü üretim ve zamansız şıklık.</p>
-    <a class="gold-button" href="#koleksiyon">Koleksiyonu incele <span>↓</span></a>
-    <div class="hero-note"><b>01</b><span>Kaliteli kumaş<br>özenli işçilik</span></div>
-  </div>
-  <div class="hero-side-note">ÖZEL ÖLÇÜ · ŞIK SUNUM · ZARİF DOKULAR</div>
+
+<section class="hero">
+  <small>ŞIKLIK DETAYLARDA GİZLİDİR</small>
+  <h1>Hayalinizdeki<br>Organizasyon</h1>
+  <p>Özel ölçü üretim, zengin kumaş çeşitleri ve premium dokular.</p>
+  <a href="#urunler" class="button">Koleksiyonu Keşfet</a>
 </section>
-<section class="trust-strip">
-  <div><span>✧</span><p><b>Kaliteli Kumaş</b><small>Seçkin dokular</small></p></div>
-  <div><span>⌁</span><p><b>Özel Ölçü Üretim</b><small>İhtiyacınıza göre</small></p></div>
-  <div><span>◇</span><p><b>Hızlı Kargo</b><small>Özenli paketleme</small></p></div>
-  <div><span>✦</span><p><b>Zengin Çeşit</b><small>Her konsepte uyum</small></p></div>
-</section>
-<section class="catalog section" id="koleksiyon">
-  <div class="section-heading">
-    <div><p class="eyebrow dark">ÜRÜN KATALOĞU · 2026</p><h2>Şıklığınızı <em>tamamlayın.</em></h2></div>
-    <p class="section-intro">Organizasyonlarınıza özel parçaları keşfedin. Ürünleri kategoriye göre filtreleyin, fiyatları inceleyin.</p>
+
+<section class="section" id="urunler">
+  <div class="section-title">
+    <h2>Ürün Koleksiyonumuz</h2>
+    <p>Ürüne tıklayarak tüm fotoğraflarını büyütebilirsiniz.</p>
   </div>
-  <div class="catalog-controls">
-    <div class="filters" id="filters"><button class="filter active" data-category="Tümü">Tümü</button></div>
-    <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Ürün ara..." aria-label="Ürün ara"></label>
+
+  <div class="filters">
+    <button class="active" data-category="all">Tüm Ürünler</button>
+    <button data-category="perde">Fon & Perde</button>
+    <button data-category="masa">Masa Ürünleri</button>
+    <button data-category="kumas">Kumaşlar</button>
   </div>
-  <p class="result-count" id="result-count"></p>
-  <div class="product-grid" id="product-grid"></div>
-  <div class="price-note"><span>✧</span><p><b>Size özel üretim</b><br>Fiyatlar bilgilendirme amaçlıdır. Sipariş öncesinde güncel fiyatı, ölçüyü ve teslim süresini teyit ediniz.</p></div>
+
+  <input id="search" placeholder="Ürün ara..." aria-label="Ürün ara">
+
+  <div class="products" id="products"></div>
 </section>
-<section class="editorial" id="hakkimizda">
-  <div class="editorial-image"></div><div class="editorial-copy">
-    <p class="eyebrow dark">İNCE DÜŞÜNÜLMÜŞ DETAYLAR</p>
-    <h2>Her organizasyona<br><em>kendine özgü bir dokunuş.</em></h2>
-    <p>Masa örtülerinden perde takımlarına, runner ve peçetelerden kumaş metrajına kadar; özel günlerinize eşlik edecek ürünleri özenle hazırlıyoruz.</p>
-    <a class="text-link" href="#koleksiyon">Ürünleri keşfet <span>↗</span></a>
-  </div>
+
+<section class="about" id="hakkimizda">
+  <h2>Kalite ve Zarafet Bir Arada</h2>
+  <p>
+    Organizasyonlarınıza özel kumaşlar, fon perdeler ve masa ürünleri.
+    Dilediğiniz renkte ve ölçüde üretim için bizimle iletişime geçin.
+    <br><br>
+    <b>Özel Ölçü Üretim · Zengin Kumaş Çeşidi · Hızlı Kargo</b>
+  </p>
 </section>
+
 <section class="contact" id="iletisim">
-  <p class="eyebrow">BİRLİKTE TASARLAYALIM</p>
-  <h2>Hayalinizdeki konsepti<br><em>birlikte tamamlayalım.</em></h2>
-  <p>Ölçü, renk, ürün ve sipariş detayları için bize ulaşın.</p>
-  <a class="gold-button" id="contact-button" href="https://www.instagram.com/organizasyonkumaslari/" target="_blank" rel="noopener">Instagram’dan iletişime geç <span>↗</span></a>
-  <small class="contact-small">Fiyatlar ve teslim süreleri sipariş öncesinde teyit edilmelidir.</small>
+  <h2>Teklif Almak İster misiniz?</h2>
+  <p>Fiyat ve detaylı bilgi için Instagram üzerinden bize ulaşabilirsiniz.</p>
+  <a class="button"
+     href="https://www.instagram.com/organizasyonkumaslari/"
+     target="_blank" rel="noopener">
+    Instagram'dan Ulaşın
+  </a>
 </section>
-</main>
-<footer><a class="brand footer-brand" href="#anasayfa"><span class="brand-mark">✦</span><span>ORGANİZASYON<small>KUMAŞLARI</small></span></a><p>© 2026 Organizasyon Kumaşları · Zarif detaylar, unutulmaz anlar.</p><a href="#anasayfa">Başa dön ↑</a></footer>
-<script src="script.js"></script>
-</body></html>
+
+<footer>
+  © <span id="year"></span> Organizasyon Kumaşları
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="gallery">
+    <button class="close" id="close">✕ Kapat</button>
+    <h2 id="galleryTitle"></h2>
+    <div id="mainPhoto"></div>
+    <p id="galleryPrice"></p>
+    <button id="previous">❮ Önceki</button>
+    <span id="photoNumber"></span>
+    <button id="next">Sonraki ❯</button>
+    <div id="thumbnails"></div>
+  </div>
+</div>
+
+<script>
+/*
+FOTOĞRAF EKLEME:
+1. GitHub'da images isimli klasör oluştur.
+2. Fotoğraflarını bu klasöre yükle.
+3. Aşağıdaki images listesine dosya yollarını yaz.
+*/
+
+const productsData = [
+  {
+    name: "Premium Fon Perde",
+    category: "perde",
+    description: "Organizasyonlar için zarif fon perde.",
+    price: "Fiyat için DM",
+    images: [
+      "images/fon-perde-1.jpg",
+      "images/fon-perde-2.jpg"
+    ]
+  },
+  {
+    name: "Masa Örtüsü",
+    category: "masa",
+    description: "Şık masa düzenlemeleri için premium tasarım.",
+    price: "Fiyat için DM",
+    images: [
+      "images/masa-ortusu-1.jpg",
+      "images/masa-ortusu-2.jpg"
+    ]
+  },
+  {
+    name: "Mikro Örme Perde",
+    category: "perde",
+    description: "Kolay şekil alan, sık pile görünümüne uygun kumaş.",
+    price: "Fiyat için DM",
+    images: [
+      "images/mikro-perde-1.jpg"
+    ]
+  },
+  {
+    name: "Safir Kadife Kumaş",
+    category: "kumas",
+    description: "Zarif dokusu ve zengin renk görünümü.",
+    price: "Fiyat için DM",
+    images: [
+      "images/safir-kadife-1.jpg",
+      "images/safir-kadife-2.jpg"
+    ]
+  },
+  {
+    name: "Runner ve Supla",
+    category: "masa",
+    description: "Sunumlara lüks bir dokunuş.",
+    price: "Fiyat için DM",
+    images: [
+      "images/runner-1.jpg"
+    ]
+  },
+  {
+    name: "Özel Renk Kumaş",
+    category: "kumas",
+    description: "Konseptinize uygun kumaş ve renk seçenekleri.",
+    price: "Fiyat için DM",
+    images: [
+      "images/ozel-kumas-1.jpg"
+    ]
+  }
+];
+
+const productsContainer = document.getElementById("products");
+const lightbox = document.getElementById("lightbox");
+
+let currentProduct = null;
+let currentIndex = 0;
+let activeCategory = "all";
+
+function renderProducts() {
+  const search = document.getElementById("search")
+    .value.toLocaleLowerCase("tr");
+
+  const filtered = productsData.filter(product => {
+    const matchesCategory =
+      activeCategory === "all" ||
+      product.category === activeCategory;
+
+    const matchesSearch =
+      (product.name + " " + product.description)
+      .toLocaleLowerCase("tr").includes(search);
+
+    return matchesCategory && matchesSearch;
+  });
+
+  productsContainer.innerHTML = filtered.map(product => {
+    const index = productsData.indexOf(product);
+    const firstImage = product.images[0];
+
+    return `
+      <article class="card">
+        <div class="photo" data-open="${index}">
+          <img
+            src="${firstImage}"
+            alt="${product.name}"
+            onerror="this.style.display='none'"
+          >
+          <span class="placeholder"
+            style="position:absolute;pointer-events:none">
+            ${product.name}
+          </span>
+          ${product.images.length > 1
+            ? `<span class="photo-count">
+                ${product.images.length} fotoğraf
+               </span>`
+            : ""}
+        </div>
+        <div class="info">
+          <h3>${product.name}</h3>
+          <p>${product.description}</p>
+          <div class="price">${product.price}</div>
+          <button data-open="${index}">
+            Fotoğrafları Gör
+          </button>
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  if (!filtered.length) {
+    productsContainer.innerHTML = "<p>Ürün bulunamadı.</p>";
+  }
+}
+
+function openGallery(index) {
+  currentProduct = productsData[index];
+  currentIndex = 0;
+  updateGallery();
+  lightbox.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function updateGallery() {
+  const product = currentProduct;
+
+  document.getElementById("galleryTitle").textContent =
+    product.name;
+  document.getElementById("galleryPrice").textContent =
+    product.price;
+
+  const mainPhoto = document.getElementById("mainPhoto");
+  const images = product.images;
+
+  if (images.length) {
+    mainPhoto.innerHTML = `
+      <img src="${images[currentIndex]}"
+           alt="${product.name}"
+           onerror="this.alt='Fotoğraf dosyası bulunamadı'">
+    `;
+  } else {
+    mainPhoto.innerHTML = "<p>Henüz fotoğraf eklenmedi.</p>";
+  }
+
+  document.getElementById("photoNumber").textContent =
+    images.length
+      ? `${currentIndex + 1} / ${images.length}`
+      : "0 fotoğraf";
+
+  document.getElementById("thumbnails").innerHTML =
+    images.map((src, i) => `
+      <img src="${src}"
+           alt="Fotoğraf ${i + 1}"
+           class="${i === currentIndex ? "selected" : ""}"
+           data-image="${i}">
+    `).join("");
+
+  document.getElementById("previous").style.display =
+    images.length > 1 ? "inline-block" : "none";
+  document.getElementById("next").style.display =
+    images.length > 1 ? "inline-block" : "none";
+}
+
+function movePhoto(direction) {
+  const images = currentProduct.images;
+  if (!images.length) return;
+
+  currentIndex =
+    (currentIndex + direction + images.length) % images.length;
+
+  updateGallery();
+}
+
+productsContainer.addEventListener("click", event => {
+  const button = event.target.closest("[data-open]");
+  if (button) openGallery(Number(button.dataset.open));
+});
+
+document.getElementById("thumbnails").addEventListener("click", event => {
+  const thumb = event.target.closest("[data-image]");
+  if (!thumb) return;
+
+  currentIndex = Number(thumb.dataset.image);
+  updateGallery();
+});
+
+document.getElementById("previous").addEventListener("click", () => {
+  movePhoto(-1);
+});
+
+document.getElementById("next").addEventListener("click", () => {
+  movePhoto(1);
+});
+
+document.getElementById("close").addEventListener("click", closeGallery);
+
+lightbox.addEventListener("click", event => {
+  if (event.target === lightbox) closeGallery();
+});
+
+function closeGallery() {
+  lightbox.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") closeGallery();
+
+  if (lightbox.classList.contains("open")) {
+    if (event.key === "ArrowLeft") movePhoto(-1);
+    if (event.key === "ArrowRight") movePhoto(1);
+  }
+});
+
+document.querySelector(".filters").addEventListener("click", event => {
+  const button = event.target.closest("[data-category]");
+  if (!button) return;
+
+  activeCategory = button.dataset.category;
+
+  document.querySelectorAll(".filters button").forEach(btn => {
+    btn.classList.toggle("active", btn === button);
+  });
+
+  renderProducts();
+});
+
+document.getElementById("search").addEventListener("input", renderProducts);
+document.getElementById("year").textContent = new Date().getFullYear();
+
+renderProducts();
+</script>
+</body>
+</html>
