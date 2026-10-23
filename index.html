@@ -1,656 +1,749 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Organizasyon Kumaşları | Premium</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123E68">
+  <meta name="description" content="Organizasyon Kumaşları 2026 fiyat kataloğu. Masa örtüsü, perde takımı, runner, peçete ve kumaş çeşitleri.">
+  <title>Organizasyon Kumaşları | 2026 Koleksiyonu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-<style>
-:root {
-  --navy: #12365a;
-  --blue: #3976a8;
-  --light: #edf6fc;
-  --gold: #c5a66a;
-}
+  <style>
+    :root {
+      --navy: #123E68;
+      --blue: #245F91;
+      --medium-blue: #397FB5;
+      --light-blue: #8FC5EA;
+      --ice-blue: #EAF4FC;
+      --pale-blue: #F5F9FD;
+      --white: #FFFFFF;
+      --text: #20364A;
+      --muted: #64798D;
+      --border: #D5E5F2;
+      --gold: #C5A66A;
+    }
 
-* { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7fbff;
-  color: var(--navy);
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header {
-  background: linear-gradient(120deg, #102c49, #3976a8);
-  color: white;
-  padding: 25px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--white);
+      font-family: 'DM Sans', sans-serif;
+    }
 
-.logo {
-  font-family: Georgia, serif;
-  font-size: 27px;
-  letter-spacing: 1px;
-}
+    a {
+      transition: all .25s ease;
+    }
 
-.logo small {
-  display: block;
-  font: 10px Arial;
-  letter-spacing: 4px;
-  margin-top: 8px;
-}
+    .topbar {
+      background: rgba(255, 255, 255, .97);
+      border-bottom: 1px solid var(--border);
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 18px;
-  font-size: 14px;
-}
+    .brand {
+      color: var(--navy);
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
 
-.hero {
-  padding: 65px 6%;
-  background: linear-gradient(135deg, #edf6fc, #c9e1f3);
-  text-align: center;
-}
+    .brand-mark {
+      color: var(--medium-blue);
+    }
 
-.hero small {
-  letter-spacing: 4px;
-  color: var(--blue);
-}
+    .brand small {
+      display: block;
+      letter-spacing: 5px;
+      color: var(--medium-blue);
+    }
 
-h1 {
-  font: clamp(35px, 6vw, 58px) Georgia, serif;
-  margin: 20px 0;
-}
+    nav a {
+      color: var(--navy);
+      text-decoration: none;
+    }
 
-.hero p {
-  color: #526b80;
-  line-height: 1.8;
-}
+    nav a:hover {
+      color: var(--medium-blue);
+    }
 
-.button {
-  display: inline-block;
-  background: var(--navy);
-  color: white;
-  padding: 14px 24px;
-  margin-top: 15px;
-  text-decoration: none;
-  border-radius: 3px;
-}
+    .nav-cta {
+      color: var(--white);
+      background: var(--navy);
+      border-radius: 4px;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
 
-.section {
-  padding: 55px 6%;
-}
+    .nav-cta:hover {
+      background: var(--medium-blue);
+    }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 35px;
-}
+    .menu-toggle {
+      color: var(--navy);
+      background: var(--ice-blue);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+    }
 
-.section-title h2 {
-  font: 36px Georgia, serif;
-}
+    .hero {
+      position: relative;
+      background: linear-gradient(120deg, #102F50, #1D527E 58%, #397FB5);
+      color: var(--white);
+      overflow: hidden;
+    }
 
-.section-title p {
-  color: #71879a;
-}
+    .hero-photo {
+      filter: saturate(.8);
+    }
 
-.filters {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 25px;
-}
+    .hero-shade {
+      background: linear-gradient(
+        90deg,
+        rgba(9, 35, 61, .94) 0%,
+        rgba(18, 62, 104, .82) 45%,
+        rgba(18, 62, 104, .28) 100%
+      );
+    }
 
-.filters button {
-  background: white;
-  color: var(--navy);
-  border: 1px solid #c8dce9;
-  padding: 10px 17px;
-  cursor: pointer;
-  border-radius: 25px;
-}
+    .eyebrow {
+      color: #C6E4FA;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 700;
+    }
 
-.filters button.active {
-  background: var(--navy);
-  color: white;
-}
+    .eyebrow span {
+      background: var(--light-blue);
+    }
 
-#search {
-  display: block;
-  width: min(100%, 400px);
-  padding: 13px;
-  border: 1px solid #c8dce9;
-  margin: 0 auto 30px;
-}
+    .eyebrow.dark {
+      color: var(--medium-blue);
+    }
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 23px;
-}
+    h1, h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+    }
 
-.card {
-  background: white;
-  border: 1px solid #e0eaf2;
-  box-shadow: 0 8px 25px #12365a0c;
-  overflow: hidden;
-}
+    .hero h1 {
+      color: var(--white);
+    }
 
-.photo {
-  height: 250px;
-  background: linear-gradient(135deg, #d8eafa, #8fb8d9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
+    .hero h1 em,
+    .contact h2 em {
+      color: #B8DDF7;
+    }
 
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    .hero-text {
+      color: #E0EDF8;
+      line-height: 1.8;
+    }
 
-.placeholder {
-  color: white;
-  font: italic 25px Georgia, serif;
-  text-align: center;
-  padding: 15px;
-}
+    .gold-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      background: var(--white);
+      color: var(--navy);
+      padding: 14px 24px;
+      border: 1px solid var(--white);
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: 700;
+    }
 
-.photo-count {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: #12365ae8;
-  color: white;
-  padding: 7px 10px;
-  border-radius: 20px;
-  font-size: 12px;
-}
+    .gold-button:hover {
+      color: var(--white);
+      background: var(--medium-blue);
+      border-color: var(--medium-blue);
+    }
 
-.info {
-  padding: 20px;
-}
+    .hero-note {
+      color: #D9EAF8;
+    }
 
-.info h3 {
-  font: 23px Georgia, serif;
-  margin: 0 0 12px;
-}
+    .hero-note b {
+      color: #B8DDF7;
+    }
 
-.info p {
-  color: #71879a;
-  font-size: 14px;
-  line-height: 1.6;
-  min-height: 44px;
-}
+    .hero-side-note {
+      color: #E1F0FC;
+    }
 
-.price {
-  color: var(--blue);
-  font-size: 18px;
-  font-weight: bold;
-}
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      background: var(--ice-blue);
+      border-bottom: 1px solid var(--border);
+    }
 
-.info button {
-  width: 100%;
-  padding: 12px;
-  background: var(--light);
-  color: var(--navy);
-  border: none;
-  margin-top: 15px;
-  cursor: pointer;
-}
+    .trust-strip > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 24px 12px;
+      border-right: 1px solid var(--border);
+    }
 
-.about {
-  background: #e8f3fb;
-  text-align: center;
-  padding: 55px 8%;
-  line-height: 1.9;
-}
+    .trust-strip > div > span {
+      color: var(--medium-blue);
+      font-size: 25px;
+    }
 
-.contact {
-  background: var(--navy);
-  color: white;
-  text-align: center;
-  padding: 50px 6%;
-}
+    .trust-strip p {
+      margin: 0;
+    }
 
-.contact p {
-  color: #d5e5f2;
-  line-height: 1.8;
-}
+    .trust-strip b {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+    }
 
-.contact .button {
-  background: white;
-  color: var(--navy);
-}
+    .trust-strip small {
+      color: var(--muted);
+      font-size: 11px;
+    }
 
-footer {
-  background: #0b233a;
-  color: #b7cadb;
-  padding: 20px;
-  text-align: center;
-  font-size: 12px;
-}
+    .section {
+      padding: 85px 6%;
+    }
 
-/* Büyüyen fotoğraf galerisi */
+    .catalog {
+      background: var(--pale-blue);
+    }
 
-.lightbox {
-  display: none;
-  position: fixed;
-  z-index: 100;
-  inset: 0;
-  background: #061727f5;
-  color: white;
-  padding: 25px;
-  align-items: center;
-  justify-content: center;
-}
+    .section-heading h2,
+    .editorial h2 {
+      color: var(--navy);
+    }
 
-.lightbox.open {
-  display: flex;
-}
+    .section-heading h2 em,
+    .editorial h2 em {
+      color: var(--medium-blue);
+    }
 
-.gallery {
-  width: min(100%, 950px);
-  text-align: center;
-}
+    .section-intro {
+      color: var(--muted);
+      line-height: 1.8;
+    }
 
-.gallery img {
-  max-width: 100%;
-  max-height: 65vh;
-  object-fit: contain;
-}
+    .catalog-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      margin: 30px 0 20px;
+    }
 
-.gallery h2 {
-  font: 28px Georgia, serif;
-}
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
 
-.gallery p {
-  color: #d2e2ef;
-}
+    .filter {
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: var(--navy);
+      border-radius: 3px;
+      padding: 10px 16px;
+      cursor: pointer;
+      transition: all .2s ease;
+    }
 
-.gallery button {
-  cursor: pointer;
-  padding: 10px 15px;
-  margin: 8px;
-  background: #244968;
-  color: white;
-  border: 1px solid #8ca9c0;
-}
+    .filter:hover,
+    .filter.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: var(--white);
+    }
 
-.gallery .close {
-  position: fixed;
-  right: 20px;
-  top: 15px;
-  font-size: 25px;
-}
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 10px 14px;
+    }
 
-#thumbnails {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-}
+    .search span {
+      color: var(--medium-blue);
+    }
 
-#thumbnails img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
+    .search input {
+      min-width: 130px;
+      border: none;
+      outline: none;
+      color: var(--navy);
+      background: transparent;
+      font: inherit;
+    }
 
-#thumbnails img.selected {
-  border-color: var(--gold);
-}
+    .result-count {
+      color: var(--muted);
+      font-size: 12px;
+    }
 
-@media (max-width: 800px) {
-  .products { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
 
-@media (max-width: 520px) {
-  .products { grid-template-columns: 1fr; }
-  .photo { height: 270px; }
-  header { justify-content: center; text-align: center; }
-  nav a { margin: 0 7px; }
-}
-</style>
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(18, 62, 104, .1);
+    }
+
+    .product-card img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      color: var(--navy);
+      margin: 0 0 8px;
+    }
+
+    .product-info p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .product-price {
+      color: var(--medium-blue);
+      font-weight: 700;
+      font-size: 19px;
+    }
+
+    .price-note {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      margin-top: 35px;
+      padding: 20px;
+      background: var(--ice-blue);
+      border-left: 3px solid var(--medium-blue);
+      color: var(--navy);
+    }
+
+    .price-note > span {
+      color: var(--medium-blue);
+      font-size: 22px;
+    }
+
+    .price-note p {
+      margin: 0;
+      line-height: 1.7;
+      font-size: 13px;
+    }
+
+    .editorial {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: var(--white);
+    }
+
+    .editorial-image {
+      min-height: 420px;
+      background-color: var(--ice-blue);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .editorial-copy {
+      padding: 70px 10%;
+      align-self: center;
+    }
+
+    .editorial-copy > p:not(.eyebrow) {
+      color: var(--muted);
+      line-height: 1.9;
+    }
+
+    .text-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--medium-blue);
+      text-decoration: none;
+      border-bottom: 1px solid var(--light-blue);
+      padding-bottom: 5px;
+    }
+
+    .text-link:hover {
+      color: var(--navy);
+    }
+
+    .contact {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #102F50, #1E5685 65%, #397FB5);
+      color: var(--white);
+    }
+
+    .contact .eyebrow {
+      color: #C6E4FA;
+    }
+
+    .contact h2 {
+      color: var(--white);
+    }
+
+    .contact > p:not(.eyebrow) {
+      color: #E0EDF8;
+      line-height: 1.8;
+    }
+
+    .contact .gold-button {
+      margin-top: 15px;
+    }
+
+    .contact-small {
+      display: block;
+      margin-top: 25px;
+      color: #C6DCEF;
+      font-size: 11px;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 25px 6%;
+      background: #0D2842;
+      color: #D5E7F6;
+    }
+
+    .footer-brand {
+      color: var(--white);
+    }
+
+    footer p {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    footer > a:last-child {
+      color: #C6E4FA;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    /* Ürün fotoğrafı büyütme penceresi */
+    .image-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      background: rgba(5, 24, 42, .94);
+    }
+
+    .image-modal.open {
+      display: flex;
+    }
+
+    .image-modal img {
+      display: block;
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, .25);
+    }
+
+    .image-modal .close-modal {
+      position: absolute;
+      top: 18px;
+      right: 25px;
+      border: 0;
+      background: transparent;
+      color: var(--white);
+      font-size: 38px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 850px) {
+      .trust-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .catalog-controls {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .search {
+        width: 100%;
+      }
+
+      .editorial {
+        grid-template-columns: 1fr;
+      }
+
+      .editorial-image {
+        min-height: 300px;
+      }
+
+      .editorial-copy {
+        padding: 45px 7%;
+      }
+
+      footer {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 5%;
+      }
+
+      .trust-strip > div {
+        justify-content: flex-start;
+        padding: 18px 10px;
+      }
+
+      .hero-side-note {
+        display: none;
+      }
+
+      nav {
+        display: none;
+      }
+
+      body.menu-open nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        padding: 20px;
+        background: var(--white);
+        border-bottom: 1px solid var(--border);
+      }
+    }
+  </style>
 </head>
 
 <body>
+<header class="topbar">
+  <a class="brand" href="#anasayfa">
+    <span class="brand-mark">✦</span>
+    <span>ORGANİZASYON<small>KUMAŞLARI</small></span>
+  </a>
 
-<header>
-  <div class="logo">
-    ORGANİZASYON KUMAŞLARI
-    <small>PREMİUM TEKSTİL KOLEKSİYONU</small>
-  </div>
   <nav>
-    <a href="#urunler">Ürünler</a>
+    <a href="#koleksiyon">Koleksiyon</a>
     <a href="#hakkimizda">Hakkımızda</a>
     <a href="#iletisim">İletişim</a>
   </nav>
+
+  <a class="nav-cta" href="#koleksiyon">Fiyatları keşfet <span>↗</span></a>
+  <button class="menu-toggle" aria-label="Menüyü aç"
+    onclick="document.body.classList.toggle('menu-open')">☰</button>
 </header>
 
-<section class="hero">
-  <small>ŞIKLIK DETAYLARDA GİZLİDİR</small>
-  <h1>Hayalinizdeki<br>Organizasyon</h1>
-  <p>Özel ölçü üretim, zengin kumaş çeşitleri ve premium dokular.</p>
-  <a href="#urunler" class="button">Koleksiyonu Keşfet</a>
-</section>
+<main>
+  <section class="hero" id="anasayfa">
+    <div class="hero-photo"></div>
+    <div class="hero-shade"></div>
 
-<section class="section" id="urunler">
-  <div class="section-title">
-    <h2>Ürün Koleksiyonumuz</h2>
-    <p>Ürüne tıklayarak tüm fotoğraflarını büyütebilirsiniz.</p>
-  </div>
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> 2026 KOLEKSİYONU <span></span></p>
+      <h1>Her detayda<br><em>zarafet.</em></h1>
+      <p class="hero-text">
+        Hayalinizdeki organizasyonlar için seçkin kumaşlar,
+        özel ölçü üretim ve zamansız şıklık.
+      </p>
+      <a class="gold-button" href="#koleksiyon">
+        Koleksiyonu incele <span>↓</span>
+      </a>
+      <div class="hero-note">
+        <b>01</b>
+        <span>Kaliteli kumaş<br>özenli işçilik</span>
+      </div>
+    </div>
 
-  <div class="filters">
-    <button class="active" data-category="all">Tüm Ürünler</button>
-    <button data-category="perde">Fon & Perde</button>
-    <button data-category="masa">Masa Ürünleri</button>
-    <button data-category="kumas">Kumaşlar</button>
-  </div>
+    <div class="hero-side-note">
+      ÖZEL ÖLÇÜ · ŞIK SUNUM · ZARİF DOKULAR
+    </div>
+  </section>
 
-  <input id="search" placeholder="Ürün ara..." aria-label="Ürün ara">
+  <section class="trust-strip">
+    <div>
+      <span>✧</span>
+      <p><b>Kaliteli Kumaş</b><small>Seçkin dokular</small></p>
+    </div>
+    <div>
+      <span>⌁</span>
+      <p><b>Özel Ölçü Üretim</b><small>İhtiyacınıza göre</small></p>
+    </div>
+    <div>
+      <span>◇</span>
+      <p><b>Hızlı Kargo</b><small>Özenli paketleme</small></p>
+    </div>
+    <div>
+      <span>✦</span>
+      <p><b>Zengin Çeşit</b><small>Her konsepte uyum</small></p>
+    </div>
+  </section>
 
-  <div class="products" id="products"></div>
-</section>
+  <section class="catalog section" id="koleksiyon">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark">ÜRÜN KATALOĞU · 2026</p>
+        <h2>Şıklığınızı <em>tamamlayın.</em></h2>
+      </div>
+      <p class="section-intro">
+        Organizasyonlarınıza özel parçaları keşfedin.
+        Ürünleri kategoriye göre filtreleyin, fiyatları inceleyin.
+      </p>
+    </div>
 
-<section class="about" id="hakkimizda">
-  <h2>Kalite ve Zarafet Bir Arada</h2>
-  <p>
-    Organizasyonlarınıza özel kumaşlar, fon perdeler ve masa ürünleri.
-    Dilediğiniz renkte ve ölçüde üretim için bizimle iletişime geçin.
-    <br><br>
-    <b>Özel Ölçü Üretim · Zengin Kumaş Çeşidi · Hızlı Kargo</b>
-  </p>
-</section>
+    <div class="catalog-controls">
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="Tümü">Tümü</button>
+      </div>
+      <label class="search">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Ürün ara..." aria-label="Ürün ara">
+      </label>
+    </div>
 
-<section class="contact" id="iletisim">
-  <h2>Teklif Almak İster misiniz?</h2>
-  <p>Fiyat ve detaylı bilgi için Instagram üzerinden bize ulaşabilirsiniz.</p>
-  <a class="button"
-     href="https://www.instagram.com/organizasyonkumaslari/"
-     target="_blank" rel="noopener">
-    Instagram'dan Ulaşın
-  </a>
-</section>
+    <p class="result-count" id="result-count"></p>
+    <div class="product-grid" id="product-grid"></div>
+
+    <div class="price-note">
+      <span>✧</span>
+      <p>
+        <b>Size özel üretim</b><br>
+        Fiyatlar bilgilendirme amaçlıdır. Sipariş öncesinde güncel fiyatı,
+        ölçüyü ve teslim süresini teyit ediniz.
+      </p>
+    </div>
+  </section>
+
+  <section class="editorial" id="hakkimizda">
+    <div class="editorial-image"></div>
+    <div class="editorial-copy">
+      <p class="eyebrow dark">İNCE DÜŞÜNÜLMÜŞ DETAYLAR</p>
+      <h2>Her organizasyona<br><em>kendine özgü bir dokunuş.</em></h2>
+      <p>
+        Masa örtülerinden perde takımlarına, runner ve peçetelerden
+        kumaş metrajına kadar; özel günlerinize eşlik edecek ürünleri
+        özenle hazırlıyoruz.
+      </p>
+      <a class="text-link" href="#koleksiyon">
+        Ürünleri keşfet <span>↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="iletisim">
+    <p class="eyebrow">BİRLİKTE TASARLAYALIM</p>
+    <h2>Hayalinizdeki konsepti<br><em>birlikte tamamlayalım.</em></h2>
+    <p>Ölçü, renk, ürün ve sipariş detayları için bize ulaşın.</p>
+    <a class="gold-button" id="contact-button"
+       href="https://www.instagram.com/organizasyonkumaslari/"
+       target="_blank" rel="noopener">
+      Instagram’dan iletişime geç <span>↗</span>
+    </a>
+    <small class="contact-small">
+      Fiyatlar ve teslim süreleri sipariş öncesinde teyit edilmelidir.
+    </small>
+  </section>
+</main>
 
 <footer>
-  © <span id="year"></span> Organizasyon Kumaşları
+  <a class="brand footer-brand" href="#anasayfa">
+    <span class="brand-mark">✦</span>
+    <span>ORGANİZASYON<small>KUMAŞLARI</small></span>
+  </a>
+  <p>© 2026 Organizasyon Kumaşları · Zarif detaylar, unutulmaz anlar.</p>
+  <a href="#anasayfa">Başa dön ↑</a>
 </footer>
 
-<div class="lightbox" id="lightbox">
-  <div class="gallery">
-    <button class="close" id="close">✕ Kapat</button>
-    <h2 id="galleryTitle"></h2>
-    <div id="mainPhoto"></div>
-    <p id="galleryPrice"></p>
-    <button id="previous">❮ Önceki</button>
-    <span id="photoNumber"></span>
-    <button id="next">Sonraki ❯</button>
-    <div id="thumbnails"></div>
-  </div>
+<div class="image-modal" id="image-modal" aria-label="Büyütülmüş ürün fotoğrafı">
+  <button class="close-modal" aria-label="Kapat">&times;</button>
+  <img src="" alt="Büyütülmüş ürün fotoğrafı">
 </div>
 
+<script src="script.js"></script>
+
 <script>
-/*
-FOTOĞRAF EKLEME:
-1. GitHub'da images isimli klasör oluştur.
-2. Fotoğraflarını bu klasöre yükle.
-3. Aşağıdaki images listesine dosya yollarını yaz.
-*/
+  // Ürün fotoğraflarını tıklayınca büyüt.
+  document.addEventListener('click', function (event) {
+    const img = event.target.closest('.product-card img');
+    const modal = document.getElementById('image-modal');
 
-const productsData = [
-  {
-    name: "Premium Fon Perde",
-    category: "perde",
-    description: "Organizasyonlar için zarif fon perde.",
-    price: "4500₺",
-    images: [
-      "images/fon-perde-1.jpg",
-      "images/fon-perde-2.jpg"
-    ]
-  },
-  {
-    name: "Masa Örtüsü",
-    category: "masa",
-    description: "Şık masa düzenlemeleri için premium tasarım.",
-    price: "1200₺",
-    images: [
-      "images/masa-ortusu-1.jpg",
-      "images/masa-ortusu-2.jpg"
-    ]
-  },
-  {
-    name: "Mikro Örme Perde",
-    category: "perde",
-    description: "Kolay şekil alan, sık pile görünümüne uygun kumaş.",
-    price: "Fiyat için DM",
-    images: [
-      "images/mikro-perde-1.jpg"
-    ]
-  },
-  {
-    name: "Safir Kadife Kumaş",
-    category: "kumas",
-    description: "Zarif dokusu ve zengin renk görünümü.",
-    price: "Fiyat için DM",
-    images: [
-      "images/safir-kadife-1.jpg",
-      "images/safir-kadife-2.jpg"
-    ]
-  },
-  {
-    name: "Runner ve Supla",
-    category: "masa",
-    description: "Sunumlara lüks bir dokunuş.",
-    price: "Fiyat için DM",
-    images: [
-      "images/runner-1.jpg"
-    ]
-  },
-  {
-    name: "Özel Renk Kumaş",
-    category: "kumas",
-    description: "Konseptinize uygun kumaş ve renk seçenekleri.",
-    price: "Fiyat için DM",
-    images: [
-      "images/ozel-kumas-1.jpg"
-    ]
-  }
-];
+    if (img && modal) {
+      const modalImg = modal.querySelector('img');
+      modalImg.src = img.src;
+      modalImg.alt = img.alt || 'Ürün fotoğrafı';
+      modal.classList.add('open');
+    }
 
-const productsContainer = document.getElementById("products");
-const lightbox = document.getElementById("lightbox");
-
-let currentProduct = null;
-let currentIndex = 0;
-let activeCategory = "all";
-
-function renderProducts() {
-  const search = document.getElementById("search")
-    .value.toLocaleLowerCase("tr");
-
-  const filtered = productsData.filter(product => {
-    const matchesCategory =
-      activeCategory === "all" ||
-      product.category === activeCategory;
-
-    const matchesSearch =
-      (product.name + " " + product.description)
-      .toLocaleLowerCase("tr").includes(search);
-
-    return matchesCategory && matchesSearch;
+    if (
+      modal &&
+      (event.target === modal || event.target.closest('.close-modal'))
+    ) {
+      modal.classList.remove('open');
+      modal.querySelector('img').src = '';
+    }
   });
 
-  productsContainer.innerHTML = filtered.map(product => {
-    const index = productsData.indexOf(product);
-    const firstImage = product.images[0];
-
-    return `
-      <article class="card">
-        <div class="photo" data-open="${index}">
-          <img
-            src="${firstImage}"
-            alt="${product.name}"
-            onerror="this.style.display='none'"
-          >
-          <span class="placeholder"
-            style="position:absolute;pointer-events:none">
-            ${product.name}
-          </span>
-          ${product.images.length > 1
-            ? `<span class="photo-count">
-                ${product.images.length} fotoğraf
-               </span>`
-            : ""}
-        </div>
-        <div class="info">
-          <h3>${product.name}</h3>
-          <p>${product.description}</p>
-          <div class="price">${product.price}</div>
-          <button data-open="${index}">
-            Fotoğrafları Gör
-          </button>
-        </div>
-      </article>
-    `;
-  }).join("");
-
-  if (!filtered.length) {
-    productsContainer.innerHTML = "<p>Ürün bulunamadı.</p>";
-  }
-}
-
-function openGallery(index) {
-  currentProduct = productsData[index];
-  currentIndex = 0;
-  updateGallery();
-  lightbox.classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-
-function updateGallery() {
-  const product = currentProduct;
-
-  document.getElementById("galleryTitle").textContent =
-    product.name;
-  document.getElementById("galleryPrice").textContent =
-    product.price;
-
-  const mainPhoto = document.getElementById("mainPhoto");
-  const images = product.images;
-
-  if (images.length) {
-    mainPhoto.innerHTML = `
-      <img src="${images[currentIndex]}"
-           alt="${product.name}"
-           onerror="this.alt='Fotoğraf dosyası bulunamadı'">
-    `;
-  } else {
-    mainPhoto.innerHTML = "<p>Henüz fotoğraf eklenmedi.</p>";
-  }
-
-  document.getElementById("photoNumber").textContent =
-    images.length
-      ? `${currentIndex + 1} / ${images.length}`
-      : "0 fotoğraf";
-
-  document.getElementById("thumbnails").innerHTML =
-    images.map((src, i) => `
-      <img src="${src}"
-           alt="Fotoğraf ${i + 1}"
-           class="${i === currentIndex ? "selected" : ""}"
-           data-image="${i}">
-    `).join("");
-
-  document.getElementById("previous").style.display =
-    images.length > 1 ? "inline-block" : "none";
-  document.getElementById("next").style.display =
-    images.length > 1 ? "inline-block" : "none";
-}
-
-function movePhoto(direction) {
-  const images = currentProduct.images;
-  if (!images.length) return;
-
-  currentIndex =
-    (currentIndex + direction + images.length) % images.length;
-
-  updateGallery();
-}
-
-productsContainer.addEventListener("click", event => {
-  const button = event.target.closest("[data-open]");
-  if (button) openGallery(Number(button.dataset.open));
-});
-
-document.getElementById("thumbnails").addEventListener("click", event => {
-  const thumb = event.target.closest("[data-image]");
-  if (!thumb) return;
-
-  currentIndex = Number(thumb.dataset.image);
-  updateGallery();
-});
-
-document.getElementById("previous").addEventListener("click", () => {
-  movePhoto(-1);
-});
-
-document.getElementById("next").addEventListener("click", () => {
-  movePhoto(1);
-});
-
-document.getElementById("close").addEventListener("click", closeGallery);
-
-lightbox.addEventListener("click", event => {
-  if (event.target === lightbox) closeGallery();
-});
-
-function closeGallery() {
-  lightbox.classList.remove("open");
-  document.body.style.overflow = "";
-}
-
-document.addEventListener("keydown", event => {
-  if (event.key === "Escape") closeGallery();
-
-  if (lightbox.classList.contains("open")) {
-    if (event.key === "ArrowLeft") movePhoto(-1);
-    if (event.key === "ArrowRight") movePhoto(1);
-  }
-});
-
-document.querySelector(".filters").addEventListener("click", event => {
-  const button = event.target.closest("[data-category]");
-  if (!button) return;
-
-  activeCategory = button.dataset.category;
-
-  document.querySelectorAll(".filters button").forEach(btn => {
-    btn.classList.toggle("active", btn === button);
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      const modal = document.getElementById('image-modal');
+      if (modal) {
+        modal.classList.remove('open');
+        modal.querySelector('img').src = '';
+      }
+    }
   });
-
-  renderProducts();
-});
-
-document.getElementById("search").addEventListener("input", renderProducts);
-document.getElementById("year").textContent = new Date().getFullYear();
-
-renderProducts();
 </script>
 </body>
 </html>
