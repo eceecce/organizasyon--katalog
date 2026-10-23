@@ -332,21 +332,21 @@
     "category": "Fiyonk",
     "name": "Fiyonk 20×40",
     "price": 1000,
-    "image": "fiyonk.jpg",
+    "image": "kurdele.jpg",
     "unit": "adet"
   },
   {
     "category": "Fiyonk",
     "name": "Fiyonk 30×60",
     "price": 1500,
-    "image": "fiyonk.jpg",
+    "image": "kurdele.jpg",
     "unit": "adet"
   },
   {
     "category": "Fiyonk",
     "name": "Fiyonk 45×90",
     "price": 3000,
-    "image": "fiyonk.jpg",
+    "image": "kurdele.jpg",
     "unit": "adet"
   }
 ]
