@@ -38,14 +38,14 @@
     "category": "Perde Takımları",
     "name": "Mat Kumaş 5’li Drape",
     "price": 5600,
-    "image": "perde.jpg",
+    "image": "beşlidrape.jpeg",
     "unit": "set"
   },
   {
     "category": "Perde Takımları",
     "name": "Mat Kumaş 3 Drape 2 Fon",
     "price": 5600,
-    "image": "perde.jpg",
+    "image": "üçdrapeikifon.png",
     "unit": "set"
   },
   {
@@ -80,7 +80,7 @@
     "category": "Perde Takımları",
     "name": "Parlak Kumaş 5’li Drape",
     "price": 6500,
-    "image": "perde.jpg",
+    "image": "üçdrapeikifon",
     "unit": "set"
   },
   {
@@ -101,21 +101,21 @@
     "category": "Peçete",
     "name": "Peçete 45×45 Kadife",
     "price": 75,
-    "image": "pecete.jpg",
+    "image": "kadifepeçete.jpeg",
     "unit": "adet"
   },
   {
     "category": "Peçete",
     "name": "Peçete 50×50 Safir",
     "price": 120,
-    "image": "pecete.jpg",
+    "image": "safirpeçete.jpeg",
     "unit": "adet"
   },
   {
     "category": "Peçete",
     "name": "Peçete 50×50 Kadife",
     "price": 90,
-    "image": "pecete.jpg",
+    "image": "kadifepeçete.jpeg",
     "unit": "adet"
   },
   {
