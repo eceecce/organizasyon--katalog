@@ -10,7 +10,7 @@
     "category": "Perde Takımları",
     "name": "Mat Kumaş Perde Takımı",
     "price": 10000,
-    "image": "perde.jpg",
+    "image": "çapraztakım.jpeg",
     "unit": "takım"
   },
   {
@@ -31,7 +31,7 @@
     "category": "Perde Takımları",
     "name": "Mat Kumaş 6 Adet Fon",
     "price": 5600,
-    "image": "perde.jpg",
+    "image": "çapraztakım.jpeg",
     "unit": "set"
   },
   {
@@ -101,7 +101,7 @@
     "category": "Peçete",
     "name": "Peçete 45×45 Kadife",
     "price": 75,
-    "image": "kadifepeçete.jpeg",
+    "image": "kadifepeçete1.jpeg",
     "unit": "adet"
   },
   {
@@ -115,7 +115,7 @@
     "category": "Peçete",
     "name": "Peçete 50×50 Kadife",
     "price": 90,
-    "image": "kadifepeçete.jpeg",
+    "image": "kadifepeçete1.jpeg",
     "unit": "adet"
   },
   {
@@ -339,7 +339,7 @@
     "category": "Fiyonk",
     "name": "Fiyonk 30×60",
     "price": 1500,
-    "image": "kurdele.JPG",
+    "image": "otuzkurdele.jpeg",
     "unit": "adet"
   },
   {
